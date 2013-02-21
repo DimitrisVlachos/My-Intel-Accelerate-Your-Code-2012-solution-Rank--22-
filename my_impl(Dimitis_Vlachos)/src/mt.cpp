@@ -110,7 +110,8 @@ static void join_nodes(travel_t& out,const travel_t& in,const uint32_t thread_in
 static void mt_wait_threads(const uint32_t active_threads) {
     for (uint32_t i = 0;i < active_threads;++i) {
         if (0 != pthread_join(g_thread_context[i],(void**)&g_thread_context_res[i])) {
-            assert("pthread_join failed!\n");
+            printf("pthread_join failed!\n");
+            assert(0);
         }
     }
 }
