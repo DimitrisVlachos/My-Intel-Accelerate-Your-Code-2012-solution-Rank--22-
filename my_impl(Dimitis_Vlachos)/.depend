@@ -1,0 +1,11 @@
+obj/io.o: src/io.cpp src/io.hpp src/base.hpp src/types.hpp \
+ src/static_strings.hpp
+obj/main.o: src/main.cpp src/base.hpp src/types.hpp \
+ src/static_strings.hpp src/mt.hpp src/profiling.hpp
+obj/mt.o: src/mt.cpp src/mt.hpp src/base.hpp src/types.hpp \
+ src/static_strings.hpp src/io.hpp src/permutations.hpp
+obj/permutations.o: src/permutations.cpp src/permutations.hpp \
+ src/base.hpp src/types.hpp src/static_strings.hpp
+obj/profiling.o: src/profiling.cpp src/profiling.hpp
+obj/static_strings.o: src/static_strings.cpp src/static_strings.hpp \
+ src/types.hpp src/mt.hpp src/base.hpp

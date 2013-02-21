@@ -1,0 +1,11 @@
+============Additional application arguments============
+
+-merge_buf_thresold N : Set the travel list thresold for streamed merging.
+Example : -merge_buf_thresold 100000
+(Which translates to:handle maximum 100K travels per block pass)
+
+-b_silent : Disable logging during runtime profiling session(if enabled)
+
+-perm_size : Set permutation ring buffer size.Default is 32 but the higher the better...
+Example : -perm_size 64
+
