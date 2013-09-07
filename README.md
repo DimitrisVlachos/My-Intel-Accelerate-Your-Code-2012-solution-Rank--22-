@@ -281,10 +281,10 @@ static inline flight_class_t classify_flight(const Parameters& params,const uint
 
 Here i'll list a few not-so-obvious optimizations that i've gone through....:
 
-#0 : 
+0 : 
     The flights.txt parser had to be re-written from scratch since it was really slow..
 
-#1 : 
+1 : 
     timegm() was causing a huge bottloneck to initialization phase, so i replaced this :
 
 time_t timegm(struct tm *tm){
